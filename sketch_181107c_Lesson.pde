@@ -15,9 +15,9 @@ float y2;
 float x3;
 float y3;
 
-// Action
 float speedX;
 
+// Sets
 void setup() {
   size(1024, 768);
   background(255);
@@ -62,6 +62,7 @@ void draw() {
   }
 }
 
+// Key
 void keyPressed() {
   if (key == 'a') {
     sd1.play();
