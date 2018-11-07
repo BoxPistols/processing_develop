@@ -25,13 +25,12 @@ void setup() {
 void draw() {
   background(255);
   noStroke();
-  colorMode(HSB,360,100,100,100);
+  colorMode(HSB, 360, 100, 100, 100);
 
-  if(scene == 1){
-    fill(0,100,100,100);
+  if (scene == 1) {
+    fill(0, 100, 100, 100);
     x1 = x1 + 20;
-    ellipse(x1,height/2,400,400);
-
+    ellipse(x1, height/2, 400, 400);
   }
 }
 
