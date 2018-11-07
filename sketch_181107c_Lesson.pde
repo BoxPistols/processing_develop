@@ -3,6 +3,13 @@ SoundFile sd1;
 SoundFile sd2;
 SoundFile sd3;
 
+//シーンを切り替える変数
+int scene;
+
+// 座標
+float x1;
+float y1;
+
 void setup() {
   size(500, 500);
   background(255);
@@ -18,7 +25,17 @@ void setup() {
 void draw() {
   background(255);
   noStroke();
+  colorMode(HSB,360,100,100,100);
+
+  if(scene == 1){
+    fill(0,100,100,100);
+    x1 = x1 + 20;
+    ellipse(x1,height/2,400,400);
+
+  }
 }
+
+
 
 void keyPressed() {
   if (key == 'a') {
